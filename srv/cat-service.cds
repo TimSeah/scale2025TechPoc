@@ -30,7 +30,7 @@ service MaintenanceService {
    
    @readonly
    view MaintenanceDashboard as select from my.Aircraft {
-      tailNumber,
+      key tailNumber,
       model,
       status,
       flightHours,
@@ -42,7 +42,7 @@ service MaintenanceService {
          when nextCheck < $now then 'Overdue'
          when nextCheck < $now + 30 then 'Due Soon'
          else 'OK'
-      end as maintenanceStatus,
+      end as maintenanceStatus : String(10),
       
       // Count related records
       maintenanceRecords.status as recordCount,
@@ -51,6 +51,7 @@ service MaintenanceService {
    
    @readonly
    view TechnicianWorkload as select from my.Technician {
+      key ID,
       employeeId,
       firstName,
       lastName,
@@ -64,14 +65,15 @@ service MaintenanceService {
    
    @readonly
    view AlertsSummary as select from my.MaintenanceAlert {
-      severity,
-      alertType,
-      status,
+      key severity,
+      key alertType,
+      key status,
       count(*) as alertCount : Integer
    } group by severity, alertType, status;
    
    @readonly
    view PartsInventory as select from my.Part {
+      key ID,
       partNumber,
       name,
       category,
@@ -82,7 +84,7 @@ service MaintenanceService {
          when stockQuantity <= 0 then 'Out of Stock'
          when stockQuantity <= minimumStock then 'Low Stock'
          else 'In Stock'
-      end as stockStatus
+      end as stockStatus : String(15)
    };
    
    //===========================================================================
@@ -286,5 +288,24 @@ annotate MaintenanceService.MaintenanceAlert with @(
       { Value: status, Label: 'Status', Criticality: 2 },
       { Value: dueDate, Label: 'Due Date' },
       { Value: assignedTo.firstName, Label: 'Assigned To' }
+   ]
+);
+
+// Flight Schedule
+annotate MaintenanceService.FlightSchedule with @(
+   UI.HeaderInfo: {
+      TypeName: 'Flight Schedule',
+      TypeNamePlural: 'Flight Schedules',
+      Title: { Value: flightNumber }
+   },
+   UI.LineItem: [
+      { Value: flightNumber, Label: 'Flight Number' },
+      { Value: departure, Label: 'Departure' },
+      { Value: arrival, Label: 'Arrival' },
+      { Value: scheduledDeparture, Label: 'Scheduled Departure' },
+      { Value: scheduledArrival, Label: 'Scheduled Arrival' },
+      { Value: status, Label: 'Status', Criticality: 2 },
+      { Value: estimatedFlightHours, Label: 'Flight Hours' },
+      { Value: maintenanceImpact, Label: 'Maintenance Impact' }
    ]
 );
