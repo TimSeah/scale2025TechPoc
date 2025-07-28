@@ -1,11 +1,11 @@
 {
   "_version": "1.65.0",
   "sap.app": {
-    "id": "project1",
+    "id": "skylink.maintenance",
     "type": "application",
     "i18n": "i18n/i18n.properties",
     "applicationVersion": {
-      "version": "0.0.1"
+      "version": "1.0.0"
     },
     "title": "{{appTitle}}",
     "description": "{{appDescription}}",
@@ -92,6 +92,31 @@
           "pattern": "Aircraft({key}):?query:",
           "name": "AircraftObjectPage",
           "target": "AircraftObjectPage"
+        },
+        {
+          "pattern": "WorkOrders:?query:",
+          "name": "WorkOrderList",
+          "target": "WorkOrderList"
+        },
+        {
+          "pattern": "WorkOrder({key}):?query:",
+          "name": "WorkOrderObjectPage",
+          "target": "WorkOrderObjectPage"
+        },
+        {
+          "pattern": "MaintenanceAlerts:?query:",
+          "name": "AlertsList",
+          "target": "AlertsList"
+        },
+        {
+          "pattern": "MaintenanceAlert({key}):?query:",
+          "name": "AlertObjectPage",
+          "target": "AlertObjectPage"
+        },
+        {
+          "pattern": "Technicians:?query:",
+          "name": "TechnicianList",
+          "target": "TechnicianList"
         }
       ],
       "targets": {
@@ -126,8 +151,77 @@
           "name": "sap.fe.templates.ObjectPage",
           "options": {
             "settings": {
-              "editableHeaderContent": false,
+              "editableHeaderContent": true,
               "contextPath": "/Aircraft"
+            }
+          }
+        },
+        "WorkOrderList": {
+          "type": "Component",
+          "id": "WorkOrderList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/WorkOrder",
+              "variantManagement": "Page",
+              "navigation": {
+                "WorkOrder": {
+                  "detail": {
+                    "route": "WorkOrderObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "WorkOrderObjectPage": {
+          "type": "Component",
+          "id": "WorkOrderObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": true,
+              "contextPath": "/WorkOrder"
+            }
+          }
+        },
+        "AlertsList": {
+          "type": "Component",
+          "id": "AlertsList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/MaintenanceAlert",
+              "variantManagement": "Page",
+              "navigation": {
+                "MaintenanceAlert": {
+                  "detail": {
+                    "route": "AlertObjectPage"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "AlertObjectPage": {
+          "type": "Component",
+          "id": "AlertObjectPage",
+          "name": "sap.fe.templates.ObjectPage",
+          "options": {
+            "settings": {
+              "editableHeaderContent": true,
+              "contextPath": "/MaintenanceAlert"
+            }
+          }
+        },
+        "TechnicianList": {
+          "type": "Component",
+          "id": "TechnicianList",
+          "name": "sap.fe.templates.ListReport",
+          "options": {
+            "settings": {
+              "contextPath": "/Technician",
+              "variantManagement": "Page"
             }
           }
         }

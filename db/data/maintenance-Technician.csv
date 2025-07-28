@@ -1,0 +1,16 @@
+ID;employeeId;firstName;lastName;email;phone;specializations;certifications;experienceYears;status;currentLocation;hourlyRate
+t1a2b3c4-d5e6-f789-0abc-def123456789;T001;John;Smith;john.smith@skylink.com;+1-555-0101;Engine, Hydraulics;A&P License, Boeing 737, Airbus A320;15;Available;JFK Hangar 1;85.50
+t2b3c4d5-e6f7-g890-1bcd-ef1234567890;T002;Maria;Rodriguez;maria.rodriguez@skylink.com;+1-555-0102;Avionics, Electrical;A&P License, Avionics Specialist;12;Busy;LAX Maintenance;78.25
+t3c4d5e6-f7g8-h901-2cde-f12345678901;T003;David;Johnson;david.johnson@skylink.com;+1-555-0103;Structural, Composites;A&P License, Boeing 777, Structural Repair;18;Available;SFO Hangar 2;92.00
+t4d5e6f7-g8h9-i012-3def-123456789012;T004;Sarah;Wilson;sarah.wilson@skylink.com;+1-555-0104;Engine, Fuel Systems;A&P License, Engine Specialist, CFM56;10;Available;ORD Terminal;82.75
+t5e6f7g8-h9i0-j123-4ef1-234567890123;T005;Michael;Brown;michael.brown@skylink.com;+1-555-0105;Landing Gear, Brakes;A&P License, Landing Gear Specialist;14;OnLeave;MIA Maintenance;88.50
+t6f7g8h9-i0j1-k234-5f12-345678901234;T006;Jennifer;Davis;jennifer.davis@skylink.com;+1-555-0106;Interior, Cabin Systems;A&P License, Interior Specialist;8;Available;BOS Terminal;76.00
+t7g8h9i0-j1k2-l345-6123-456789012345;T007;Robert;Miller;robert.miller@skylink.com;+1-555-0107;Avionics, Navigation;A&P License, Avionics, ILS Systems;16;Busy;DEN Maintenance;89.25
+t8h9i0j1-k2l3-m456-7234-567890123456;T008;Lisa;Anderson;lisa.anderson@skylink.com;+1-555-0108;Engine, APU;A&P License, APU Specialist, PT6;11;Available;SEA Hangar 3;80.75
+t9i0j1k2-l3m4-n567-8345-678901234567;T009;Christopher;Taylor;chris.taylor@skylink.com;+1-555-0109;Hydraulics, Flight Controls;A&P License, Hydraulics Specialist;13;Available;ATL Maintenance;84.50
+t0j1k2l3-m4n5-o678-9456-789012345678;T010;Amanda;Thomas;amanda.thomas@skylink.com;+1-555-0110;Electrical, Power Systems;A&P License, Electrical Systems;9;Busy;PHX Terminal;79.00
+t1k2l3m4-n5o6-p789-0567-890123456789;T011;James;Jackson;james.jackson@skylink.com;+1-555-0111;Structural, NDT;A&P License, NDT Level II, Structural;20;Available;LAS Maintenance;95.00
+t2l3m4n5-o6p7-q890-1678-901234567890;T012;Michelle;White;michelle.white@skylink.com;+1-555-0112;Avionics, Flight Management;A&P License, FMS Specialist;7;Available;MCO Hangar 1;75.50
+t3m4n5o6-p7q8-r901-2789-012345678901;T013;Daniel;Harris;daniel.harris@skylink.com;+1-555-0113;Engine, Propulsion;A&P License, Engine Overhaul;17;Unavailable;DFW Maintenance;91.75
+t4n5o6p7-q8r9-s012-3890-123456789012;T014;Jessica;Martin;jessica.martin@skylink.com;+1-555-0114;Cabin, Environmental;A&P License, Environmental Systems;6;Available;IAH Terminal;74.25
+t5o6p7q8-r9s0-t123-4901-234567890123;T015;Kevin;Thompson;kevin.thompson@skylink.com;+1-555-0115;Landing Gear, Tires;A&P License, Landing Gear, Tire Service;12;Available;JFK Terminal 4;83.00

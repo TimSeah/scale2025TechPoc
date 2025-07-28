@@ -1,0 +1,16 @@
+ID;partNumber;name;description;manufacturer;category;unitPrice;stockQuantity;minimumStock;location;status
+p1a2b3c4-d5e6-f789-0abc-def123456789;ENG-001-FILTER;Engine Oil Filter;High-performance oil filter for jet engines;Pratt & Whitney;Engine Components;285.50;45;10;Warehouse A1;Available
+p2b3c4d5-e6f7-g890-1bcd-ef1234567890;HYD-002-PUMP;Hydraulic Pump Assembly;Main hydraulic system pump for flight controls;Parker Aerospace;Hydraulic Systems;12500.00;3;2;Warehouse B2;LowStock
+p3c4d5e6-f7g8-h901-2cde-f12345678901;AVI-003-DISPLAY;Flight Display Unit;Primary flight display for cockpit avionics;Honeywell;Avionics;18750.00;8;3;Warehouse C1;Available
+p4d5e6f7-g8h9-i012-3def-123456789012;LG-004-TIRE;Main Landing Gear Tire;Heavy-duty aircraft tire for main landing gear;Michelin;Landing Gear;1850.00;12;5;Warehouse D1;Available
+p5e6f7g8-h9i0-j123-4ef1-234567890123;ELE-005-BATTERY;Emergency Battery Pack;Backup battery for emergency electrical systems;Saft;Electrical;4200.00;6;3;Warehouse E1;Available
+p6f7g8h9-i0j1-k234-5f12-345678901234;FCS-006-ACTUATOR;Flight Control Actuator;Primary flight control surface actuator;Moog;Flight Controls;8950.00;4;2;Warehouse F1;Available
+p7g8h9i0-j1k2-l345-6123-456789012345;CAB-007-OXYGEN;Oxygen Generator;Passenger cabin oxygen generation system;Air Liquide;Cabin Systems;15600.00;2;2;Warehouse G1;Available
+p8h9i0j1-k2l3-m456-7234-567890123456;ENG-008-SENSOR;Engine Temperature Sensor;High-temperature sensor for engine monitoring;General Electric;Engine Components;750.00;25;8;Warehouse A2;Available
+p9i0j1k2-l3m4-n567-8345-678901234567;NAV-009-ANTENNA;GPS Navigation Antenna;High-precision GPS antenna for navigation;Garmin;Navigation;3200.00;7;3;Warehouse H1;Available
+p0j1k2l3-m4n5-o678-9456-789012345678;FUE-010-VALVE;Fuel System Valve;Automated fuel control valve for fuel management;Eaton;Fuel Systems;2850.00;15;5;Warehouse I1;Available
+p1k2l3m4-n5o6-p789-0567-890123456789;INT-011-SEAT;Economy Class Seat;Standard economy class passenger seat;Recaro;Interior;950.00;0;20;Warehouse J1;OutOfStock
+p2l3m4n5-o6p7-q890-1678-901234567890;APU-012-STARTER;APU Starter Motor;Auxiliary power unit starter motor;Hamilton Sundstrand;APU;6750.00;3;2;Warehouse K1;LowStock
+p3m4n5o6-p7q8-r901-2789-012345678901;BRA-013-PAD;Brake Pad Set;Carbon composite brake pads for landing gear;Safran;Landing Gear;1200.00;18;6;Warehouse D2;Available
+p4n5o6p7-q8r9-s012-3890-123456789012;ICE-014-SYSTEM;Anti-Ice System;Wing and engine anti-icing system components;Goodrich;Environmental;22500.00;1;1;Warehouse L1;LowStock
+p5o6p7q8-r9s0-t123-4901-234567890123;COM-015-RADIO;VHF Communication Radio;Primary VHF radio communication system;Collins Aerospace;Communications;5400.00;9;4;Warehouse M1;Available

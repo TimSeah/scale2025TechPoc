@@ -1,23 +1,24 @@
-tailNumber;model;lastCheck;nextCheck;flightHours
-SA8880;Airbus A330;2024-09-24;2026-03-27;2847
-KE2815;Airbus A350;2025-01-30;2026-01-28;3714
-DL6343;Airbus A350;2024-08-16;2025-07-11;1122
-QR5924;Airbus A320;2024-08-14;2025-07-19;1289
-AF1454;Boeing 737;2025-01-19;2025-11-20;4439
-ET4010;Boeing 747;2024-11-17;2026-01-28;883
-SK3823;Airbus A330;2024-12-12;2026-01-13;1723
-LA9571;Airbus A330;2024-06-26;2025-06-12;137
-AA7291;Airbus A320;2024-09-09;2025-06-06;4763
-BA8817;Boeing 737;2024-10-12;2025-11-26;1935
-AF8764;Boeing 747;2025-04-15;2026-02-04;1537
-WN2726;Airbus A320;2025-03-09;2025-12-13;4444
-AC1756;Airbus A350;2025-04-24;2025-12-15;3909
-SA7667;Boeing 737;2024-11-23;2025-10-28;4547
-TG8482;Airbus A320;2025-04-04;2025-10-30;3595
-TG5949;Airbus A350;2024-09-19;2026-03-12;1294
-SK7047;Boeing 737;2025-04-24;2025-11-29;1587
-AC5785;Airbus A320;2024-08-24;2026-05-07;3706
-SQ7108;Airbus A350;2024-11-19;2025-12-03;1414
+tailNumber;model;manufacturer;yearManufactured;lastCheck;nextCheck;flightHours;cycleCount;status;location;maxFlightHours;maxCycles;riskScore;predictedIssues;maintenanceUrgency
+SL001;Boeing 737-800;Boeing;2018;2024-12-15;2025-08-15;4250;2100;Active;JFK Terminal 4;6000;3000;0.25;Engine vibration increasing;Medium
+SL002;Airbus A320;Airbus;2019;2024-11-20;2025-07-20;3890;1950;Active;LAX Hangar 2;5500;2800;0.15;Normal operation;Low
+SL003;Boeing 737-800;Boeing;2017;2024-10-10;2025-06-10;5200;2600;Maintenance;SFO Maintenance Bay 1;6000;3000;0.45;Hydraulic pressure low;High
+SL004;Airbus A350;Airbus;2020;2025-01-05;2025-09-05;2100;1000;Active;ORD Gate B12;8000;4000;0.08;Excellent condition;Low
+SL005;Boeing 777-300;Boeing;2015;2024-09-30;2025-05-30;7800;3900;Grounded;MIA Maintenance;9000;4500;0.78;Multiple system alerts;Critical
+SL006;Airbus A320;Airbus;2021;2025-02-01;2025-10-01;1500;750;Active;BOS Terminal A;5500;2800;0.12;Minor cosmetic issues;Low
+SL007;Boeing 737-800;Boeing;2016;2024-12-01;2025-08-01;5500;2750;Active;DEN Concourse B;6000;3000;0.35;Landing gear wear;Medium
+SL008;Airbus A350;Airbus;2019;2024-11-15;2025-07-15;4200;2100;Active;SEA Terminal C;8000;4000;0.22;APU performance declining;Medium
+SL009;Boeing 777-200;Boeing;2014;2024-08-20;2025-04-20;8200;4100;Maintenance;ATL Hangar 5;9000;4500;0.65;Engine overhaul required;High
+SL010;Airbus A321;Airbus;2022;2025-01-20;2025-09-20;800;400;Active;PHX Gate A5;5800;2900;0.05;New aircraft - excellent;Low
+SL011;Boeing 737-900;Boeing;2018;2024-10-25;2025-06-25;4800;2400;Active;LAS Terminal 1;6200;3100;0.30;Cabin pressure sensors;Medium
+SL012;Airbus A319;Airbus;2017;2024-09-15;2025-05-15;5800;2900;Active;MCO Terminal B;5200;2600;0.40;Avionics update needed;Medium
+SL013;Boeing 737-800;Boeing;2019;2025-01-10;2025-09-10;3200;1600;Active;DFW Terminal C;6000;3000;0.18;Routine maintenance due;Low
+SL014;Airbus A350;Airbus;2021;2024-12-20;2025-08-20;2800;1400;Active;IAH Terminal A;8000;4000;0.10;Minor software updates;Low
+SL015;Boeing 777-300;Boeing;2016;2024-11-05;2025-07-05;6900;3450;Active;JFK Terminal 1;9000;4500;0.42;Fuel system monitoring;Medium
+SL016;Airbus A320;Airbus;2020;2024-12-30;2025-08-30;2400;1200;Active;LAX Terminal 6;5500;2800;0.14;Clean maintenance record;Low
+SL017;Boeing 737-800;Boeing;2015;2024-08-05;2025-04-05;6200;3100;Maintenance;SFO Hangar 3;6000;3000;0.58;Major inspection due;High
+SL018;Airbus A321;Airbus;2018;2024-10-15;2025-06-15;4600;2300;Active;ORD Terminal 2;5800;2900;0.28;Tire replacement needed;Medium
+SL019;Boeing 777-200;Boeing;2017;2024-11-30;2025-07-30;5400;2700;Active;MIA Terminal J;9000;4500;0.33;Navigation system check;Medium
+SL020;Airbus A350;Airbus;2022;2025-02-15;2025-10-15;1200;600;Active;BOS Terminal E;8000;4000;0.06;Newest fleet addition;Low
 TG3656;Airbus A350;2025-03-25;2025-07-10;4663
 AV3043;Boeing 777;2024-10-22;2026-02-18;3173
 WN7069;Airbus A350;2024-08-03;2026-06-16;4424
